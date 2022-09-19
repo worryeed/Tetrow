@@ -6,9 +6,12 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 5057575e04560d5f5c5d097413740c4414161e2f2a7e7365792d4b35e6e2373c
+      value: 02060d020356500b555c5c2348725c444e4e482e7e7a71342c711c37b0e4636c
       flags: 0
     RecentlyUsedSceneGuid-1:
+      value: 5057575e04560d5f5c5d097413740c4414161e2f2a7e7365792d4b35e6e2373c
+      flags: 0
+    RecentlyUsedSceneGuid-2:
       value: 000405025303595e5b5a5e7547275d44404e417b797174317e794a62e7e2603e
       flags: 0
     UnityRemoteDevice:

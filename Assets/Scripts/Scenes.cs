@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
 public class Scenes : MonoBehaviour
 {
     public void ChangedScenes(int numberScenes)
     {
-        SceneManager.LoadScene(numberScenes);
+        if (numberScenes == -1) 
+            SceneManager.LoadScene(ScenesData.LastScene);
+        else
+        {
+            SceneManager.LoadScene(numberScenes);
+        }
+        print(ScenesData.LastScene);
     }
+    public void ChangedLastScenes(int numberScenes) => ScenesData.LastScene = numberScenes;
 }

@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 
 public class Board : MonoBehaviour
 {
     public Tilemap tilemap { get; private set; }
     public Piece activePiece { get; private set; }
+    public Scenes scene { get; private set; }
 
     public TetrominoData[] tetrominoes;
 
@@ -25,6 +27,8 @@ public class Board : MonoBehaviour
     {
         tilemap = GetComponentInChildren<Tilemap>();
         activePiece = GetComponentInChildren<Piece>();
+
+        scene = gameObject.AddComponent<Scenes>();
 
         for (int i = 0; i < tetrominoes.Length; i++)
         {
@@ -56,7 +60,8 @@ public class Board : MonoBehaviour
 
     public void GameOver()
     {
-        tilemap.ClearAllTiles();
+        scene.ChangedScenes(2);
+        //tilemap.ClearAllTiles();
     }
 
     public void Set(Piece piece)
@@ -166,5 +171,10 @@ public class Board : MonoBehaviour
 
             row++;
         }
+    }
+
+    public void Restart()
+    {
+        scene.ChangedScenes(ScenesData.LastScene);
     }
 }
