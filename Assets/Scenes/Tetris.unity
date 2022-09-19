@@ -336,6 +336,7 @@ MonoBehaviour:
   stepDelay: 1
   moveDelay: 0.1
   lockDelay: 0.5
+  isRotateLeftPushed: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

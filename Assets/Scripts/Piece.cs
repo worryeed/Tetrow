@@ -19,7 +19,7 @@ public class Piece : MonoBehaviour
     private float moveTime;
     private float lockTime;
 
-    private bool isRotateLeftPushed;
+    public bool isRotateLeftPushed;
     private bool isRotateRightPushed;
 
     private bool isLeftPushed;
@@ -119,6 +119,8 @@ public class Piece : MonoBehaviour
         }
     }
 
+    #region button changing status
+
     public void OnLeftButtonDown()
     {
         step = 0;
@@ -169,6 +171,8 @@ public class Piece : MonoBehaviour
         isDownPushed = false;
         delayMoveDelay = 0f;
     }
+
+    #endregion
 
     private void Step()
     {
