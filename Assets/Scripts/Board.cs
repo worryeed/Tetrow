@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 
 public class Board : MonoBehaviour
 {

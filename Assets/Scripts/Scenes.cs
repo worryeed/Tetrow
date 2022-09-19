@@ -11,10 +11,7 @@ public class Scenes : MonoBehaviour
         if (numberScenes == -1) 
             SceneManager.LoadScene(ScenesData.LastScene);
         else
-        {
             SceneManager.LoadScene(numberScenes);
-        }
-        print(ScenesData.LastScene);
     }
     public void ChangedLastScenes(int numberScenes) => ScenesData.LastScene = numberScenes;
 }
