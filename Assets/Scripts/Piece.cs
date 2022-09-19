@@ -50,7 +50,7 @@ public class Piece : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         board.Clear(this);
 
